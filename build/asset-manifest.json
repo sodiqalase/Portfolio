@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.77ea4c63.chunk.css",
-    "main.js": "/static/js/main.9000feaf.chunk.js",
-    "main.js.map": "/static/js/main.9000feaf.chunk.js.map",
+    "main.js": "/static/js/main.2b3c354d.chunk.js",
+    "main.js.map": "/static/js/main.2b3c354d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
     "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
     "static/js/2.998eb9f0.chunk.js": "/static/js/2.998eb9f0.chunk.js",
     "static/js/2.998eb9f0.chunk.js.map": "/static/js/2.998eb9f0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8f3c2a5d45c5d273207751b4b5eb56a1.js": "/precache-manifest.8f3c2a5d45c5d273207751b4b5eb56a1.js",
+    "precache-manifest.7b7343f1c5920fc73d76b9a97e132aa7.js": "/precache-manifest.7b7343f1c5920fc73d76b9a97e132aa7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.77ea4c63.chunk.css.map": "/static/css/main.77ea4c63.chunk.css.map",
     "static/js/2.998eb9f0.chunk.js.LICENSE.txt": "/static/js/2.998eb9f0.chunk.js.LICENSE.txt",
@@ -23,13 +23,13 @@
     "static/media/react (2).png": "/static/media/react (2).cff40704.png",
     "static/media/salestracker.png": "/static/media/salestracker.ffb54271.png",
     "static/media/shoepro.png": "/static/media/shoepro.b186d41c.png",
-    "static/media/sodiq5.jpg": "/static/media/sodiq5.959aa4ad.jpg",
+    "static/media/sodiq5.jpg": "/static/media/sodiq5.8e7b6c0f.jpg",
     "static/media/wordpress.png": "/static/media/wordpress.ca4a1034.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c2b20a0b.js",
     "static/js/2.998eb9f0.chunk.js",
     "static/css/main.77ea4c63.chunk.css",
-    "static/js/main.9000feaf.chunk.js"
+    "static/js/main.2b3c354d.chunk.js"
   ]
 }
