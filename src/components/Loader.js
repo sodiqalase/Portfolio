@@ -10,9 +10,9 @@ function Loader(props) {
   let load = useRef(null)
   
   useEffect(() => {
-    // setTimeout(() => {
-    //   props.history.push('/portfolio');
-    // },5000)
+    setTimeout(() => {
+      props.history.push('/portfolio');
+    },5000)
     // gsap.from(head,.5,{ x: '30vw', opacity: 0, delay: .4})
     // gsap.from(bar,1,{ scale: 0, opacity: 0, delay: .9})
     // gsap.from(sec,.8,{ opacity: 0, delay: 1.5})
