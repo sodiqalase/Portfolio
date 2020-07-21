@@ -13,13 +13,13 @@ function Loader(props) {
     setTimeout(() => {
       props.history.push('/portfolio');
     },5000)
-    // gsap.from(head,.5,{ x: '30vw', opacity: 0, delay: .4})
-    // gsap.from(bar,1,{ scale: 0, opacity: 0, delay: .9})
-    // gsap.from(sec,.8,{ opacity: 0, delay: 1.5})
-    // gsap.from(load,.8,{ opacity: 0, delay: 2})
+    // gsap.from(head,1,{ x: '30vw', opacity: 0, delay: .4})
+    // gsap.from(bar,2,{ scale: 0, opacity: 0, delay: .9})
+    // gsap.from(sec,1,{ opacity: 0, y: '20vh', delay: 1.9})
+    // gsap.from(load,1,{ opacity: 0, delay: 2.4})
     
     
-    
+    // eslint-disable-next-line
   },[])
 
   return (
@@ -65,8 +65,10 @@ function Loader(props) {
         <div ref={ el => sec = el } className="just-a-second">
         Just a second, please !
         </div>
-        <div ref={ el => load = el } className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+       
+        <div ref={ el => load = el } class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
       </div>
+        
 
     </main>
   )

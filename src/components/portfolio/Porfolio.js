@@ -8,6 +8,7 @@ import Why from './Why'
 import Contact from './Contact'
 import Projects from './Projects'
 import Availability from './Availability'
+import Thank from './Thank'
 
 function Porfolio() {
   return (
@@ -23,6 +24,7 @@ function Porfolio() {
       <Why />
       <Availability />
       <Contact />
+      <Thank />
       
       
     </main>

@@ -1,10 +1,16 @@
 @import variables
 @import basic_formating
 
-// fonts import
+
 @font-face 
   font-family: 'p'
   src: url('./fonts/Neoneon-3zaD6.otf') 
+  font-weight: bold
+  font-style: normal
+
+@font-face 
+  font-family: 'l'
+  src: url('./fonts/Kopeek20-Regular.woff') format("woff")
   font-weight: bold
   font-style: normal
 @font-face 
@@ -23,12 +29,23 @@
   font-weight: bold
   font-style: normal
 @font-face 
-  font-family: 'l'
+  font-family: 'a'
   src: url('./fonts/MonumentExtended-Regular.woff2') format("woff2")
   font-weight: bold
   font-style: normal
 
+
+
+
+
+
+
   // general styling
+
+
+
+
+
 body
   overflow-x: hidden
 .root
@@ -42,9 +59,12 @@ body
 .white
   color: $w
 .red
-  color: $r5
+  color: $o5
 .green
   color: $gr6
+
+.blue
+  color: blue
 
 // Background and overlay of loader page
 .loader-main
@@ -62,9 +82,11 @@ body
     right: 0
     bottom: 0
     left: 0
-    background: url('./images/blur-close-up-code-computer-546819.jpg') no-repeat center center/cover
+    background: $b url('./images/blur-close-up-code-computer-546819.jpg') no-repeat center center/cover
+    // background: $b url('./images/movie.png') 
     .loader-overlay
-      background: rgba(0,0,0,.8)
+      // background: rgba(0,0,0,.96)
+      background: rgba(0,0,0,.9) url('./images/movie.png') 
       width: 100%
       height: 100%
   
@@ -79,8 +101,7 @@ body
       color: $o5
       font-size: 50px
       font-family: 'k'
-      .white
-        color: $t4
+      
     .bar-wrapper
       margin-top: 5vh
       position: relative
@@ -97,7 +118,7 @@ body
         bottom: 0
         width: 100%
         height: 100%
-        border: 5px solid $r5
+        border: 5px solid $o5
         border-radius: 7px
         animation: stag 7s ease 1s infinite
 
@@ -135,7 +156,7 @@ body
     .just-a-second
       color: $w
       margin-top: 10vh
-      margin-bottom: 5vh
+      margin-bottom: 10vh
       font-family: 'l'
       font-size: 25px
 
@@ -169,7 +190,7 @@ body
     right: 0
     bottom: 0
     background: url('./images/Rhone.png') no-repeat center center/cover
-    opacity: .065
+    opacity: .1
     
     height: 100%
     
@@ -197,13 +218,21 @@ body
         top: -2px
         align-self: center
         .brand-link
-          font-family: 'l'
+          font-family: 'a'
           color: $w
           font-size: 14px
       .nav-social-icons
         
         display: flex
         width: auto
+        .twitter
+          margin-right: 5px
+          svg
+            width: 25px 
+            color: $w
+            height: 25px
+            &:hover
+              color: $o5
         .whatsapp
           margin-right: 5px
           svg
@@ -211,7 +240,7 @@ body
             color: $w
             height: 25px
             &:hover
-              color: $r5
+              color: $o5
         .linkedin
           
           margin-right: 5px
@@ -220,14 +249,14 @@ body
             color: $w
             height: 25px
             &:hover
-              color: $r5
+              color: $o5
         .github
           svg
             width: 25px 
             height: 25px
             color: $w
             &:hover
-              color: $r5
+              color: $o5
         
   
   .showcase
@@ -247,8 +276,10 @@ body
           order: 2
           flex-basis: 60%
           .showcase-firstline
+            
           .showcase-name
             margin-top: 2vh
+            
             position: relative
             padding: 12px
             display: inline-block
@@ -287,11 +318,12 @@ body
                   animation: stag 6s ease 4s infinite
           .nigeria  
             margin-top: 2vh
+            
             .green
               color: $gr6
           .build
-            .red
-              color: $r5
+            
+            
           .buttons
             
             margin-top: 2vh
@@ -299,23 +331,23 @@ body
             .btn1,.btn2
               display: inline-block
               font-weight: bold
-              font-size: 18px
-              padding: 12px 19px
+              font-size: 16px
+              padding: 10px 15px
               border: none
               border-radius: 5px
             .btn1
-              background: $r5
+              background: $o5
               margin-right: 10px
               color: $w
               &:hover
                 
-                background: $r7
+                background: $o7
             .btn2
-              color: $r5
+              color: $o5
               background: $w
               &:hover
                 
-                background: $g4
+                background: $g3
                 
         .left
           z-index: 9
@@ -331,7 +363,7 @@ body
             font-size: 80px
             transform: rotate(270deg)
           .front
-            color: $r5
+            color: $o5
             position: relative
             left: -40%
           .dev 
@@ -352,12 +384,14 @@ body
       margin: 0 auto
       .about-heading
         margin-bottom: 3vh
-        font-size: 31px
+        font-size: 27px
       .about-content
         font-family: 'l'
-        letter-spacing: 1.3px
+        color: $w
+        letter-spacing: 1.1px
         line-height: 1.8
-        font-size: 18px
+        font-size: 20px
+        margin-bottom: 2vh
   
   .lang
     z-index: 3
@@ -371,7 +405,7 @@ body
         margin-bottom: 3vh
         text-align: right
         font-family: 'k'
-        font-size: 31px
+        font-size: 25px
       .grid
         width: 100%
         display: grid
@@ -416,9 +450,9 @@ body
     .container3
       .project-heading
         text-align: right
-        margin-bottom: 3vh
+        margin-bottom: 5vh
         font-family: 'k'
-        font-size: 31px
+        font-size: 25px
       .project
         position: relative
         border: 6px solid $gr4
@@ -432,7 +466,8 @@ body
           
           font-family: 'k'
           font-size: 40px
-          color: $y4
+          color: $w
+          text-shadow: 5px 5px 1px $o5, -5px -5px 1px $o5
           position: absolute
           right: -10%
           top: 10%
@@ -447,15 +482,15 @@ body
         margin-bottom: 5vh
         margin-left: 15px
         border: none
-        background: $w
-        color: $r5
+        background: $o5
+        color: $w
         padding: 7px 10px
         font-family: 'm'
         border-radius: 5px
         box-shadow: 0px 2px 6px rgba(255,255,255,.3)
         &:hover
           color: $w
-          background: $r5
+          background: $o7 
 
         
   .why
@@ -468,10 +503,11 @@ body
         margin-bottom: 3vh
         text-align: right
         font-family: 'k'
-        font-size: 31px
+        font-size: 25px
       .why-list
+        text-align: right
         letter-spacing: 1.3px
-        font-size: 18px
+        font-size: 20px
         font-family: 'l'
         line-height: 1.8
 
@@ -486,11 +522,11 @@ body
         margin-bottom: 3vh
         text-align: right
         font-family: 'k'
-        font-size: 31px
+        font-size: 25px
       .avail-content
         margin-bottom: 2vh
         letter-spacing: 1.3px
-        font-size: 18px
+        font-size: 20px
         font-family: 'l'
         line-height: 1.8
 
@@ -504,14 +540,49 @@ body
         margin-bottom: 3vh
         text-align: right
         font-family: 'k'
-        font-size: 31px
+        font-size: 25px
       .email,.tel
+        text-align: right
         color: $w
         line-height: 2.2
-        font-size: 16px
+        font-size: 20px
         letter-spacing: 1.5px
         font-family: 'l'
- 
+  .thank
+    margin-top: 3vh
+    margin-bottom: 4vh
+    .container3
+      .thank-content
+        text-align: center
+        font-size: 40px
+        font-family: 'ttf'
+        .show
+          color: $t4
+          text-shadow: 0px 0px 5px rgba(48, 200, 214,1), 0px 0px 10px rgba(48, 200, 214,1), 0px 0px 15px rgba(48, 200, 214,1), 0px 0px 20px rgba(48, 200, 214,1), 0px 0px 25px rgba(48, 200, 214,1), 0px 0px 30px rgba(48, 200, 214,1)
+          &:nth-child(1)
+            
+            animation: stag 6s ease 1s infinite
+          &:nth-child(3)
+            
+            animation: stag 6s ease 1s infinite
+          &:nth-child(8)
+            
+            animation: stag 6s ease infinite
+          &:nth-child(8)
+            
+            animation: stag 6s ease 2s infinite
+          
+          &:nth-child(12)
+            
+            animation: stag 6s ease 6s infinite
+          &:nth-child(16)
+            animation: stag 6s ease infinite
+          &:nth-child(19)
+            animation: stag 6s ease 1s infinite
+          &:nth-child(21)
+            animation: stag 6s ease 6s infinite
+          &:nth-child(22)
+            animation: stag 6s ease 6s infinite
 
 // Staggering animation
 @keyframes stag
@@ -561,57 +632,91 @@ body
 
 
 // loader animation
-.lds-ellipsis 
+.lds-roller 
+  margin-top: 5vh
   display: inline-block
   position: relative
   width: 80px
   height: 80px
 
-.lds-ellipsis div 
+.lds-roller div 
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite
+  transform-origin: 40px 40px
+
+.lds-roller div:after 
+  content: " "
+  display: block
   position: absolute
-  top: 33px
-  width: 10px
-  height: 10px
+  width: 8px
+  height: 8px
   border-radius: 50%
   background: $pgb
-  animation-timing-function: cubic-bezier(0, 1, 1, 0)
+  margin: -4px 0 0 -4px
 
-.lds-ellipsis div:nth-child(1) 
-  left: 8px
-  
-  animation: lds-ellipsis1 0.6s infinite
+.lds-roller div:nth-child(1) 
+  animation-delay: -0.036s
 
-.lds-ellipsis div:nth-child(2) 
-  left: 8px
-  background: $y5
-  animation: lds-ellipsis2 0.6s infinite
+.lds-roller div:nth-child(1):after 
+  top: 63px
+  left: 63px
 
-.lds-ellipsis div:nth-child(3) 
-  left: 32px
-  background: $r6
-  animation: lds-ellipsis2 0.6s infinite
+.lds-roller div:nth-child(2) 
+  animation-delay: -0.072s
 
-.lds-ellipsis div:nth-child(4) 
+.lds-roller div:nth-child(2):after 
+  top: 68px
   left: 56px
-  
-  animation: lds-ellipsis3 0.6s infinite
 
-@keyframes lds-ellipsis1 
+.lds-roller div:nth-child(3) 
+  animation-delay: -0.108s
+
+.lds-roller div:nth-child(3):after 
+  top: 71px
+  left: 48px
+
+.lds-roller div:nth-child(4) 
+  animation-delay: -0.144s
+
+.lds-roller div:nth-child(4):after 
+  top: 72px
+  left: 40px
+
+.lds-roller div:nth-child(5) 
+  animation-delay: -0.18s
+
+.lds-roller div:nth-child(5):after 
+  top: 71px
+  left: 32px
+
+.lds-roller div:nth-child(6) 
+  animation-delay: -0.216s
+
+.lds-roller div:nth-child(6):after 
+  top: 68px
+  left: 24px
+
+.lds-roller div:nth-child(7) 
+  animation-delay: -0.252s
+
+.lds-roller div:nth-child(7):after 
+  top: 63px
+  left: 17px
+
+.lds-roller div:nth-child(8) 
+  animation-delay: -0.288s
+
+.lds-roller div:nth-child(8):after 
+  top: 56px
+  left: 12px
+
+@keyframes lds-roller 
   0% 
-    transform: scale(0)
+    transform: rotate(0deg)
   
   100% 
-    transform: scale(1)
-@keyframes lds-ellipsis3 
-  0% 
-    transform: scale(1)
-  100% 
-    transform: scale(0)
-@keyframes lds-ellipsis2 
-  0% 
-    transform: translate(0, 0)
-  100% 
-    transform: translate(24px, 0)
+    transform: rotate(360deg)
+  
+
 
 
 // media queries
@@ -687,7 +792,7 @@ body
   .bar-wrapper
     padding: 15px !important
   .just-a-second
-    font-size: 20px !important
+    font-size: 23px !important
 @media (max-width: 880px)
   .portfolio-about
     margin-top: 62vh !important
@@ -727,7 +832,7 @@ body
   .bar-element
     font-size: 25px !important
   .just-a-second
-    font-size: 16px !important
+    font-size: 20px !important
     margin-top: 7vh !important
     margin-bottom: 0vh !important
 // @media (max-width: 758px)
@@ -735,6 +840,12 @@ body
 //     font-size: 90px !important
 //     left: -42% !important
 @media (max-width: 560px)
+  .container1
+    max-width: 90% !important
+  .thank-content
+    font-size: 25px !important
+  .about-heading, .lang-heading, .tools-heading, .project-heading, .why-i, .avail-heading, .contact-heading
+    font-size: 20px !important
   .about-content
     font-size: 16px !important
   .left-pics
@@ -749,9 +860,9 @@ body
     left: -20% !important
 @media (max-width: 500px)
   .email,.tel
-    font-size: 14px !important
+    font-size: 16px !important
   .why-list, .avail-content
-    font-size: 14px !important
+    font-size: 16px !important
     line-height: 2 !important
   .project-name
     font-size: 30px !important
@@ -797,7 +908,7 @@ body
   .project-img-wrap
     height: 35vh !important
   .about-content
-    font-size: 14px !important
+    font-size: 16px !important
   .front, .dev
     font-size: 80px !important
   .portfolio-about
@@ -805,16 +916,16 @@ body
 
 @media (max-width: 380px)
   .email,.tel
-    font-size: 12px !important
+    font-size: 16px !important
   .why-list, .avail-content
-    font-size: 12px !important
+    font-size: 16px !important
   .bar-element
     font-size: 20px !important
   .just-a-second
-    font-size: 14px !important
+    font-size: 18px !important
 @media (max-width: 365px)
   .about-content
-    font-size: 12px !important
+    font-size: 15px !important
   .front, .dev
     font-size: 75px !important
   .front
@@ -826,5 +937,5 @@ body
   .showcase-element
     font-size: 30px !important
   .btn1,.btn2
-    
-    padding: 10px 15px !important
+    font-size: 12px !important
+    padding: 7px 12px !important

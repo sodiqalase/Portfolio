@@ -6,7 +6,7 @@ function Availability() {
      <div className="container3">
        <h2 className="avail-heading">__<span className="red">availability</span>...</h2>
        <h4 className="avail-content">
-         I'd like to join your amazing team to help build beautiful and easy-to-navigate interfaces that will bring about amazing user experience.
+         I'd like to join your amazing team to help build beautiful and user-friendly interfaces that will leave users stunned.
        </h4>
        <h4 className="avail-content">
          I'm open to internship, Junior Frontend Developer role and Gigs.

@@ -47,7 +47,7 @@ function Showcase() {
               </h2>
             </div>
             <h2 ref={el => nigeria = el} className="nigeria">from <span className="green">Ni</span>ger<span className="green">ia...</span></h2>
-            <h2 ref={el => build = el} className="build">I build <span className="red">beautiful </span>and <br /> <span className="red">stunning</span> websites that <br /> are  <span className="red">highly performing</span> and <span className="red">responsive...</span></h2>
+            <h2 ref={el => build = el} className="build">I build <span className="red">beautiful </span>and <br /> <span className="red">user-friendly</span> websites that <br /> are  <span className="red">highly performing</span> and <span className="red">responsive...</span></h2>
             <div ref={el => btn = el} className="buttons">
               <a href="https://drive.google.com/file/d/1bJa63BrB9Urtje1RGKjottZJsMPq6Hu4/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn1">View Resume</a>
               <a href="https://wa.me/2348136021545" target="_blank" rel="noopener noreferrer" className="btn2">Contact Me</a>
