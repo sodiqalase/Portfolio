@@ -20,7 +20,7 @@ function Projects() {
             <img src={portfolio} alt="" className="project-img"/>
           </div>
         </div>
-        <Link to="/portfolio"  className="visit">Visit Website</Link>
+        <Link to="/"  className="visit">Visit Website</Link>
         <div className="project">
           <div className="project-name">CoolMovies</div>
           <div className="project-img-wrap">
